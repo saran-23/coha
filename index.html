@@ -144,8 +144,9 @@
         
         nav {
             background: rgb(26, 197, 75);
-            color: #000;
+            color: #fff;
             display: flex;
+			font-weight: 900;
             justify-content: space-between;
         }
         
@@ -181,21 +182,6 @@
             cursor: pointer;
         }
         
-        .fa-facebook:hover {
-            color: rgb(0, 110, 255);
-        }
-        
-        .fa-twitter:hover {
-            color: rgb(86, 154, 243);
-        }
-        
-        .fa-instagram:hover {
-            color: rgb(255, 0, 191);
-        }
-        
-        .fa-github:hover {
-            color: rgb(255, 123, 0);
-        }
         
         nav .logo {
             margin: 6px;
@@ -267,11 +253,11 @@
     
     <!-- partial:index.partial.html -->
 <body class="antialiased sans-serif">
-    <nav class="flex items-center justify-between flex-wrap bg--500 p-6">
+    <nav class="flex items-center justify-between flex-wrap bg--500 pb-2">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           <!-- <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg> -->
           <!-- <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span> -->
-            <img src="https://nhm.gov.in/images/logo/logo.png" alt=""  width="140" height="90"> 
+            <img src="./src/rural.png" alt=""  width="140" height="90"> 
             <span class="font-semibold text-xl tracking-tight"></span>
 
         </div>
@@ -299,7 +285,7 @@
               </a>
           </div>
           <div>
-            <img src="https://www.tnesevai.tn.gov.in/Images/TNlogo2.png" alt=""  width="80" height="120"> 
+            <!-- <img src="./src/tnega.png" alt=""  width="80" height="120">  -->
             <!-- <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"></a> -->
           </div>
         </div>
@@ -475,9 +461,13 @@
 			</div>
 		</template>
 
-		<button class="mt-6 bg-white hover:bg-gray-100 text-gray-700 font-semibold py-2 px-4 text-sm border border-gray-300 rounded shadow-sm" x-on:click="openModal = !openModal">
+		<button  style="background-color: rgba(15, 173, 70, 0.65)" class="mt-6 bg-white hover:bg-gray-100 text-gray-700 font-semibold py-2 px-4 text-sm border border-gray-300 rounded shadow-sm" x-on:click="openModal = !openModal">
 			Submit
 		</button>
+		<pre>
+
+
+		</pre>
 <!-- 
 		<div class="py-2 ml-auto mt-5 w-full sm:w-2/4 lg:w-1/4">
 			<div class="flex justify-between mb-3">
@@ -502,11 +492,13 @@
 				</div>
 			</div>
 		</div> -->
+		
+<!-- <footer style = "background-color:rgb(26, 197, 75) ;"class="container">
 
 		<div class="py-10 text-center">
 			<p class="text-gray-600">Created by <a class="text-blue-600 hover:text-blue-500 border-b-2 border-blue-200 hover:border-blue-300" href="#"><b style="color:rgb(0 128 0)">TNeGA</b></a>.</p>
 		</div>
-
+	</footer> -->
 		<!-- Print Template -->
 		<div id="js-print-template" x-ref="printTemplate" class="hidden">
 			<div class="mb-8 flex justify-between">
@@ -712,8 +704,33 @@
 				</div>
 			</div>
 		</div>
+		<br>
+		<br>
+		<br>
+		
 		<!-- /Modal -->
+		<nav class="flex items-center justify-between flex-wrap bg--500 p-4">
 
+				<!-- <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+				  Docs
+				</a>
+				<a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+				  Examples
+				</a>
+				<a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+				  Blog
+				</a> -->
+				
+				<a href="#responsive-header" class="block mt-4 lg:inline-block  lg:mt-0 text-black-200 hover:text-white">
+					<img src="./src/tnega.png" width="80" height="120"> 
+					
+				  </a><br>
+				  <p style="color: #fff;">Created by <a class="text-blue-600 hover:text-blue-500 border-b-2 border-blue-200 hover:border-blue-300" href="#"><b style="color:rgb(0 128 0)">TNeGA</b></a>.</p>
+
+			  </div>
+
+			</div>
+		  </nav>
 	</div>
 	
 	<script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
